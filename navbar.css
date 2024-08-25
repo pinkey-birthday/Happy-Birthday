@@ -1,0 +1,131 @@
+.navbar {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+    gap: 20px;
+    z-index: 10;
+    margin-top: 20px;
+}
+.navbar-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.navbar-item {
+    text-decoration: none;
+    font-family: 'GoodVibrations', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(255, 105, 180, 0.3);
+}
+.navbar-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(255, 105, 180, 0.4);
+}
+/* Icon in buttons */
+.button-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Party button styles */
+.party-button {
+    background-color: #ff69b4; /* Matching pink theme */
+    color: white;
+}
+
+.party-button:hover {
+    background-color: #ff2f94;
+    color:rgba(255, 255, 255, 0.9);
+}
+
+/* Vintage button styles */
+.vintage-button {
+    background-color: #d2b48c; /* Matching vintage parchment color */
+    color: #894827; 
+    font-family: 'Times New Roman', Times, serif; /* Classic font for vintage feel */
+}
+
+.vintage-button:hover {
+    background-color: #c2a071;
+    color: #50343f;
+}
+
+/* Navbar Toggle Button */
+.navbar-toggle {
+    display: none; /* Hidden by default; shown on mobile */
+    background-color: #ff69b4; /* Primary pink color */
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    color: #fff; /* White text for contrast */
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-toggle:hover {
+    background-color: #ff2f94; /* Darker pink for hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.navbar-toggle:active {
+    background-color: #e03d79; /* Even darker pink for active state */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+
+@media (max-width: 768px) {
+    .navbar{
+        border-radius: 0;
+    }
+    .navbar-content {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+    }
+    .theme-button {
+        padding: 6px 10px;
+        text-align: center;
+        width: 80%;
+    }
+    .navbar-item{
+        padding: 8px 12px;
+        text-align: center;
+        width: 70%;
+        margin: 8px;
+        height: 36px;
+    }
+    .navbar-content.show {
+        display: flex;      /* Show links when toggled */
+        border-radius: 20px 20px 0 0;
+        align-items: center;
+    }
+    .navbar-toggle {
+        display: block;     /* Show toggle button on mobile */
+    }
+    button.navbar-toggle:active {
+        background-color: rgb(233 198 138); /* Lighter brown background on hover */
+        color: #a1481b;
+    }
+}

@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide-1 {
+    background: url('img/a.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.slide-2 {
+    background: url('img/b1.jpg') no-repeat center top;
+    background-size: 100% auto;
+}
+
+.slide-3 {
+    background: url('img/c1.jpeg') no-repeat center center;
+    background-size: contain;
+}
+
+.slide-4 {
+    background: url('img/d.jpg') no-repeat center center;
+    background-size: contain;
+}
+
+.slide-5 {
+    background: url('img/e.jpg') no-repeat center bottom;
+    background-size: cover;
+}
+.slide-6 {
+    background: url('img/f.jpg') no-repeat center -200px;
+    background-size: cover;
+}
+.slide-7 {
+    background: url('img/g1.jpg') no-repeat center center;
+    background-size: cover;
+}
+.slide-8 {
+    background: url('img/h1.jpg') no-repeat center center;
+    background-size: cover;
+}
+.slide-9 {
+    background: url('img/i.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-10 {
+    background: url('img/j1.jpg') no-repeat center 0;
+    background-size: cover;
+}
+.slide-11 {
+    background: url('img/k1.jpg') no-repeat center center;
+    background-size: cover;
+}
+.slide-12 {
+    background: url('img/l.jpg') no-repeat center center;
+    background-size: cover;
+}
+.slide-13 {
+    background: url('img/m1.jpg') no-repeat center center;
+    background-size: cover;
+}
+.slide-14 {
+    background: url('img/n1.jpg') no-repeat center center;
+    background-size: cover;
+}
+.slide-15 {
+    background: url('img/o1.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-16 {
+    background: url('img/p.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-17 {
+    background: url('img/r.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-18 {
+    background: url('img/s1.jpg') no-repeat center center;
+    background-size: cover;
+}
+.slide-19 {
+    background: url('img/t.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-20 {
+    background: url('img/u1.jpg') no-repeat center center;
+    background-size: cover;
+}
+.slide-21 {
+    background: url('img/v1.jpg') no-repeat center center;
+    background-size: cover;
+}
+.slide-22 {
+    background: url('img/w1.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-23 {
+    background: url('img/x.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-24 {
+    background: url('img/y.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-25 {
+    background: url('img/z1.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-26 {
+    background: url('img/za1.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-27 {
+    background: url('img/zb1.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-28 {
+    background: url('img/zc.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-29 {
+    background: url('img/zd1.jpg') no-repeat center center;
+    background-size: contain;
+}
+.slide-30 {
+    background: url('img/ze.jpg') no-repeat center center;
+    background-size: cover;
+}
+.slide-31 {
+    background: url('img/zf.jpg') no-repeat center top;
+    background-size: cover;
+}
+.slide-32 {
+    background: url('img/zg.jpeg') no-repeat center top;
+    background-size: contain;
+}
+.slide-33 {
+    background: url('img/zh1.jpg') no-repeat center top;
+    background-size: contain;
+}
+.caption {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    transform: translateY(0%);
+}
+
+.caption h3 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.caption p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.arrow img {
+    width: 50px;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.l {
+    left: 10px;
+}
+
+.r {
+    right: 10px;
+}
+
+
+.container {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; /* Full viewport height */
+    background-color: #ffffff48; /* Light background color for contrast */
+    backdrop-filter: blur(8px);
+}
+
+#start-slide-show {
+    background-color: #ff4081; /* Vibrant pink color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 30px; /* Comfortable padding */
+    font-size: 1.2rem; /* Larger font size for readability */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+}
+
+#start-slide-show:hover {
+    background-color: #f50057; /* Slightly darker pink on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#start-slide-show:active {
+    background-color: #c51162; /* Even darker pink when pressed */
+    transform: scale(0.95); /* Slightly shrink effect when pressed */
+}
+
+@media (max-width: 768px) {
+    .caption{
+        padding: 5px;
+    }
+	.caption p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .slide-2{
+        background-position: center center;
+    }
+    .slide-6{
+        background-position: center center;
+    }
+    .slide-11{
+        background-size: contain;
+    }
+    .slide-12{
+        background-size: contain;
+    }
+    .slide-32{
+        background-position: center center;
+    }
+    .slide-33{
+        background-position: center center;
+    }
+}

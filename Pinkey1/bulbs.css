@@ -1,0 +1,134 @@
+
+#bulb-container {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; /* Distribute bulbs evenly */
+    align-items: center;
+    height: 70px;
+    display: none; /* Hidden by default */
+    z-index: 1;
+}
+
+.bulb {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px 50px;
+    opacity: 0;
+}
+
+.bulb-blue {
+    background-image: url('images/bulb_blue.png');
+    animation: bulb_fade_in 2s forwards, bulb_blue_change 5s infinite;
+}
+
+.bulb-green {
+    background-image: url('images/bulb_green.png');
+    animation: bulb_fade_in 2s forwards, bulb_green_change 5s infinite;
+}
+
+.bulb-red {
+    background-image: url('images/bulb_red.png');
+    animation: bulb_fade_in 2s forwards, bulb_red_change 5s infinite;
+}
+
+.bulb-yellow {
+    background-image: url('images/bulb_yellow.png');
+    animation: bulb_fade_in 2s forwards, bulb_yellow_change 5s infinite;
+}
+
+.bulb-orange {
+    background-image: url('images/bulb_orange.png');
+    animation: bulb_fade_in 2s forwards, bulb_orange_change 5s infinite;
+}
+
+.bulb-pink {
+    background-image: url('images/bulb_pink.png');
+    animation: bulb_fade_in 2s forwards, bulb_pink_change 5s infinite;
+}
+
+@keyframes bulb_fade_in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bulb_blue_change {
+    0% {
+        background-image: url('images/bulb_blue.png');
+    }
+    50% {
+        background-image: url('images/bulb_green.png');
+    }
+    100% {
+        background-image: url('images/bulb_blue.png');
+    }
+}
+
+@keyframes bulb_green_change {
+    0% {
+        background-image: url('images/bulb_green.png');
+    }
+    50% {
+        background-image: url('images/bulb_red.png');
+    }
+    100% {
+        background-image: url('images/bulb_green.png');
+    }
+}
+
+@keyframes bulb_red_change {
+    0% {
+        background-image: url('images/bulb_red.png');
+    }
+    50% {
+        background-image: url('images/bulb_yellow.png');
+    }
+    100% {
+        background-image: url('images/bulb_red.png');
+    }
+}
+
+@keyframes bulb_yellow_change {
+    0% {
+        background-image: url('images/bulb_yellow.png');
+    }
+    50% {
+        background-image: url('images/bulb_orange.png');
+    }
+    100% {
+        background-image: url('images/bulb_yellow.png');
+    }
+}
+
+@keyframes bulb_orange_change {
+    0% {
+        background-image: url('images/bulb_orange.png');
+    }
+    50% {
+        background-image: url('images/bulb_pink.png');
+    }
+    100% {
+        background-image: url('images/bulb_orange.png');
+    }
+}
+
+@keyframes bulb_pink_change {
+    0% {
+        background-image: url('images/bulb_pink.png');
+    }
+    50% {
+        background-image: url('images/bulb_blue.png');
+    }
+    100% {
+        background-image: url('images/bulb_pink.png');
+    }
+}

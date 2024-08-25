@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Birthday</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="envelope.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <audio id="background-audio" src="song/Pretty Woman.mp3" preload="auto" autoplay loop></audio>
+    <div class="section">
+        <div class="quotes">
+            <p class="q1">I am not always there with you</p>
+            <p class="q2">But I am always there for you</p>
+            <p class="q3">Happy Birthday to You Pinkey</p>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="B-dayCard">
+                <div class="envelope"></div>
+                <div class="front"></div>
+                <div class="card">
+                    <div id="typed-container">
+                        <div class="line1" id="line1"></div><br>
+                        <div class="line2" id="line2"></div>
+                    </div>
+                    <div class="cake">🎂</div>
+                </div>
+                <div class="hearts">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four"></div>
+                    <div class="five"></div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div id="card-area">
+        <div class="wrapper">
+            <div class="box-area">
+                <div class="box hover-element" data-sound="song/Tum Jo Aaye.mp3">
+                    <img class="main-image" alt="" src="img/a1.jpg">
+                    <img class="hover-image" alt="" src="img/a2.jpg">
+                    <div class="overlay">
+                        <p>Tumhare aane se zindagi mein roshni aa gayi—ab hum samajh gaye hain ki tumhare bina hum kaise
+                            andheron mein the! ✨😉</p>
+                    </div>
+                </div>
+                <div class="box hover-element" data-sound="song/Sadiya Bulukiya.mp3">
+                    <img alt="" src="img/c.jpg" class="zoominout">
+                    <div class="overlay blue">
+                        <p>When you dress to match the sky, but end up outshining it. 💙😜</p>
+                    </div>
+                </div>
+                <div class="box hover-element" data-sound="song/Billo Ni Tera Suit Patiala.mp3">
+                    <img alt="" src="img/d.jpg">
+                    <img src="img/wine.gif" alt="" class="wine">
+                    <div class="overlay">
+                        <p>Kurti aur jhumkas toh amazing hain, lekin tumhari smile toh sabse zyada shining hai ✨😊</p>
+                    </div>
+                </div>
+                <div class="box hover-element" data-sound="song/Saurabh.mp3">
+                    <img alt="" src="img/g.jpeg" class="pendulum">
+                    <div class="overlay">
+                        <p>Tumhara birthday hai, lekin yeh itna khush kyun hai? Kya tumhare charm ne isko deewana bana
+                            diya? 😉😏</p>
+                    </div>
+                </div>
+                <div class="box hover-element" data-sound="song/Suit.mp3">
+                    <img alt="" src="img/e.jpg">
+                    <div class="overlay">
+                        <p>Aapki selfie toh killer hai, room bhi thoda jealous lag raha hai. 😏</p>
+                    </div>
+                </div>
+                <div class="box hover-element" data-sound="song/Neend Chuari Meri.mp3">
+                    <img alt="" src="img/i.jpg" class="shake">
+                    <img src="img/sleep.gif" alt="" class="sleep">
+                    <div class="overlay">
+                        <p>When the lecture is just too comfy to stay awake 😴</p>
+                    </div>
+                </div>
+                <div class="box hover-element" data-sound="song/Kohinoor Lagelu.mp3">
+                    <img alt="" src="img/b.jpg">
+                    <img alt="" src="img/sparkle.gif" class="sparkle">
+                    <div class="overlay white">
+                        <p>Tumhare aage to diamonds bhi sharmaake chhup jaayein! 💎</p>
+                    </div>
+                </div>
+                <div class="box hover-element" data-sound="song/Diamond Ni.mp3">
+                    <img alt="" src="img/h.jpg">
+                    <div class="overlay">
+                        <p>Aise mask ke saath bhi itni khoobsurti, yeh toh kisi superpower se kam nahi! 😂🌟</p>
+                    </div>
+                </div>
+                <div class="box hover-element" data-sound="song/Mera suit Patiala kitno ko maar Dala.mp3">
+                    <img alt="" src="img/f.jpg">
+                    <img src="img/flower.gif" alt="" class="flower">
+                    <div class="overlay">
+                        <p>Slaying the temple steps — making sure even the gods notice your vibe! 😏✨</p>
+                    </div>
+                </div>
+                <div class="box hover-element saurabh" data-sound="song/Nadaaniyan.mp3">
+                    <img alt="" src="img/j.jpg" class="brain">
+                    <div class="overlay">
+                        <p>Saurabh ne apni creativity ka full use kar diya! 😆😂 Yeh photo dekh ke maza aa gaya, Saurabh
+                            ki creative skills pe ek ‘applause’ banta hai! 😜👏 </p>
+                    </div>
+                </div>
+                <div class="box hover-element" data-sound="song/Don.mp3">
+                    <img alt="" src="img/k.jpg" class="don hazzy">
+                    <img src="img/fire.gif" alt="" class="fire">
+                    <div class="overlay red">
+                        <p>Jab dost ka attitude high ho, toh dosti bhi VIP category mein aati hai! 😎🎉 </p>
+                    </div>
+                </div>
+                <div class="box hover-element" data-sound="song/Apne Labhar Ko Dhokha Do.mp3">
+                    <img alt="" src="img/l.jpg" class="hazzy lover zoominout">
+                    <img src="img/hearts.gif" alt="" class="heart-gif">
+                    <div class="overlay red">
+                        <p>Trying to see if I can out-charm her boyfriend… Wish me luck! 🚉😜</p>
+                    </div>
+                </div>
+                <div class="box hover-element" data-sound="song/Dhaniya.mp3">
+                    <img alt="" src="img/m.jpg" style="height: auto;">
+                    <img src="img/dhaniya.gif" alt="" class="dhaniya">
+                    <div class="overlay green">
+                        <p>Dhaniya ko toh kitchen mein bhi dekhna ek alag hi experience hai! 😆🔥</p>
+                    </div>
+                </div>
+                <div class="box hover-element" id="myElement" data-sound="song/Bhagwan Badi Fursat Se.mp3">
+                    <img alt="" src="img/n.jpg">
+                    <img src="img/nazar na lage.gif" alt="" id="hover-gif">
+                    <div class="overlay">
+                        <p>Drawing aur asli chehra itne same to same hain ki ab toh confuse ho gaya hoon, kispe fida
+                            hoon! 😉🎨</p>
+                    </div>
+                </div>
+                <div class="box hover-element" id="images" data-sound="song/Nazar Na Lag Jaaye.mp3" >
+                    <img alt="" src="img/o1.jpg" id="image1">
+                    <img alt="" src="img/o2.jpg" id="image2">
+                    <img src="img/no-brain.gif" alt="" id="brain-gif">
+                    <img alt="" src="img/o3.jpg" id="image3">
+                    <img alt="" src="img/o4.jpg" id="image4">
+                    <img src="img/Joker.gif" alt="" id="Joker">
+                    <audio src="song/Sari Umar Mai Joker.mp3" class="joker"></audio>
+                    <div class="overlay black">
+                        <p id="dimaag1">Ka kya dhoondh rahi ho neeche? </p>
+                        <p id="dimaag2">Yeh kya, dimaag gir gaya? Ab dhoondh rahe ho, mil jaye to bata dena! 🧠</p>
+                        <p id="dimaag3">Shukr hai, tumhara dil mere paas hai—wahaan safe hai 😊</p>
+                        <p id="jokerline">Joker 🤡</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar-content" id="navbarContent">
+            <a href="../Pinkey4/index.html" class="navbar-item party-button">
+                <span class="button-icon"></span> Want Some More Surprise
+            </a>
+        </div>
+    </nav>
+    <script src="image.js"></script>
+    <script src="script.js"></script>
+    <script src="typing.js"></script>
+</body>
+
+</html>

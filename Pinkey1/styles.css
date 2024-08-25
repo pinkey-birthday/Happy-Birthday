@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Black background initially */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color linear 5s;
+    overflow: hidden; /* Remove scrollbars */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff1493; /* Deep pink */
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff69b4; /* Light pink on hover */
+}
+
+.peach {
+    background-color: #f170a6; /* Initial peach color */
+}
+
+.peach-after {
+    animation: peach_alive 8s infinite;
+}
+
+@keyframes peach_alive {
+    0% {
+        background-color: #f170a6; /* Soft Pink */
+    }
+    25% {
+        background-color: #f8b5d6; /* Light Pink */
+    }
+    50% {
+        background-color: #f8a5a8; /* Peachy Pink */
+    }
+    75% {
+        background-color: #fdd4df; /* Very Light Pink */
+    }
+    100% {
+        background-color: #f170a6; /* Soft Pink */
+    }
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader img{
+    height: 100%;
+}
+
+.banner {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 355px; /* Adjust width as needed */
+    height: 184px; /* Adjust height as needed */
+    background-image: url('images/banner.png'); /* Ensure path is correct */
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    opacity: 1; /* Ensure banner starts visible */
+}
+
+@keyframes banner_come {
+    0% {
+        transform: translateX(-50%) translateY(-1000px) rotate(0deg);
+        opacity: 0;
+    }
+    25% {
+        transform: translateX(-50%) translateY(0px) rotate(5deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-50%) translateY(50px) rotate(-5deg);
+    }
+    75% {
+        transform: translateX(-50%) translateY(10px) rotate(3deg);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0px) rotate(0deg);
+        opacity: 1; /* Ensure it stays visible */
+    }
+}
+
+.banner-come {
+    animation: banner_come 3s ease-out forwards;
+}
+
+.balloon {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: -20px; /* Start from the bottom */
+    transform: translateX(-50%);
+    width: 200px; /* Responsive width */
+    height: 768px; /* Maintain aspect ratio */
+    opacity: 0;
+    animation: fade_in_up 6s ease-out forwards; /* Slower fade in up animation */
+}
+
+.balloon-left {
+    left: 80px;
+    background-image: url('images/balloon-border-left.png');
+}
+
+.balloon-right {
+    right: -100px;
+    background-image: url('images/balloon-border-right.png');
+}
+
+@keyframes fade_in_up {
+    0% {
+        transform: translateX(-50%) translateY(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+
+.balloons-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(10vh) translateX(0) scale(1) rotate(var(--rotate-deg)); /* Start position off-screen */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh) translateX(calc(var(--horizontal-sway))) scale(1) rotate(var(--rotate-deg)); /* Move completely off-screen */
+        opacity: 0.3;
+    }
+}
+
+.single-balloon {
+    position: absolute;
+    bottom: -20px; /* Start off-screen */
+    width: 80px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: floatUp 10s linear infinite;
+    opacity: 1;
+    transform: rotate(0deg); /* Initial rotation */
+    animation-timing-function: linear; /* Constant speed */
+    --horizontal-sway: 0vw; /* Default value for horizontal sway */
+    --rotate-deg: 0deg;
+    will-change: transform, opacity;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .15), 0 10px 100px rgba(0, 0, 0, 0.3);
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    background-color: white; /* Light pink background */
+    border-top: 1px solid white; /* Slightly darker pink border */
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+    z-index: 10;
+}
+
+.navbar-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.navbar-item {
+    color: #ff66b2; /* Bright pink text color */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 30%;
+    padding: 12px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.navbar-item:hover {
+    background-color: #ff66b2; /* Bright pink background on hover */
+    color: white;
+}
+
+.navbar-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #ff66b2; /* Bright pink icon color */
+    cursor: pointer;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        bottom: 120px;
+    }
+    .cake {
+        bottom: 28%;
+    }
+    .navbar{
+        border-radius: 0;
+    }
+    .navbar-content {
+        display: none; /* Hide links on mobile */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        background-color: #fbd7e9; /* Same light pink background */
+        border-top: 1px solid #f8c6d6; /* Same border color */
+    }
+    .navbar-item {
+        width: 100%;
+        padding: 10px 2px 5px 2px;
+    }
+    .navbar-content.show {
+        display: flex; /* Show links when toggled */
+        gap: 0;
+        border-radius: 20px 20px 0 0;
+    }
+    .navbar-toggle {
+        display: block; /* Show toggle button on mobile */
+    }
+    button.navbar-toggle:hover {
+        background-color: transparent; /* or any other style to negate the hover effect */
+    }
+    button.navbar-toggle:active{
+        background-color: #ff69b4;
+    }
+}

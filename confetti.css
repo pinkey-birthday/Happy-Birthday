@@ -1,0 +1,44 @@
+.confetti {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    top: -110px;
+    opacity: 1;
+    transform: rotate(0deg) rotateY(0deg);
+}
+
+@keyframes down {
+    0% {
+        top: -110px;
+        transform: rotate(0deg) rotateY(-90deg);
+        opacity: 1;
+    }
+
+    100% {
+        top: 100vh;
+        transform: rotate(360deg) rotateY(180deg);
+        opacity: 0.5;
+    }
+}
+
+@keyframes downTwo {
+    0% {
+        top: -130px;
+        transform: rotate(0deg) rotateY(90deg);
+        opacity: 1;
+    }
+
+    100% {
+        top: 100vh;
+        transform: rotate(-360deg) rotateY(-180deg);
+        opacity: 0.5;
+    }
+}
