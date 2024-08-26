@@ -21,7 +21,7 @@ const videosList = [
     },
     {
         "video": "images/Cook.mp4",
-        "title": "When your bestie shows up with homemade goodies—best friend and chef in one! 🍽️❤️"
+        "title": "Ankhoon mein teri ajab si aadaein hai, ki is chutiye ko bas video banana hi kaam hai! 😄📹"
     },
     {
         "video": "images/Cooking.mp4",
@@ -61,43 +61,39 @@ const videosList = [
     },
     {
         "video": "images/Smile.mp4",
-        "title": "Pinkey Smile"
+        "title": "Sliding into fun while my bestie's laugh makes everything better! 😄🎢"
     },
     {
         "video": "images/Waiter.mp4",
-        "title": "Pinkey Waiter"
+        "title": "Bestie ne khana serve kiya aur humne ‘Maa ke haath ka khana’ ka experience enjoy kiya! 😆🍴"
     },
     {
         "video": "images/River.mp4",
-        "title": "River Side"
+        "title": "Fun aur dosti ki ultimate combo: riverside aur humari crazy antics! 😎🔥"
     },
     {
         "video": "images/Same.mp4",
-        "title": "Same Same"
-    },
-    {
-        "video": "images/Saurabh.mp4",
-        "title": "Saurabh Saurabh"
-    },
-    {
-        "video": "images/SaurabhWalk.mp4",
-        "title": "Saurabh Walk"
-    },
-    {
-        "video": "images/Sharmati.mp4",
-        "title": "Sharmati huyi Woh"
-    },
-    {
-        "video": "images/Sleeping.mp4",
-        "title": "Sleeping"
-    },
-    {
-        "video": "images/Swing.mp4",
-        "title": "Swing"
+        "title": "Portrait aur tum: Same style, same smile! 😁🖼️"
     },
     {
         "video": "images/Walk.mp4",
-        "title": "Walk"
+        "title": "Caught on camera: The epic struggle of synchronizing steps with your partner. 😂👫"
+    },
+    {
+        "video": "images/SaurabhWalk.mp4",
+        "title": "Phone ko ground pe rakh ke, aur yeh walk: Ek hi question hai, kaun karta hai yeh sab? 😂📱🤳"
+    },
+    {
+        "video": "images/Sharmati.mp4",
+        "title": "Face chhupane ki strategy, kyunki camera se bachne ka koi chance nahi! 😄📸"
+    },
+    {
+        "video": "images/Sleeping.mp4",
+        "title": "Sote hue bhi top karne ka plan hai! 😂🛌"
+    },
+    {
+        "video": "images/Swing.mp4",
+        "title": "Seesaw pe bestie ka weight aur hasi ka balance—ek hi taraf! 😜😄"
     }
 ]
 
