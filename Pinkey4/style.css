@@ -258,10 +258,33 @@
     .slide-6{
         background-position: center center;
     }
+    .slide-7{
+        background-size: contain;
+    }
+    .slide-8{
+        background-size: contain;
+    }
+    .slide-10{
+        background-position: center center;
+        background-size: contain;
+    }
     .slide-11{
         background-size: contain;
     }
     .slide-12{
+        background-size: contain;
+    }
+    .slide-18{
+        background-size: contain;
+    }
+    .slide-21{
+        background-size: contain;
+    }
+    .slide-30{
+        background-size: contain;
+    }
+    .slide-31{
+        background-position: center center;
         background-size: contain;
     }
     .slide-32{
